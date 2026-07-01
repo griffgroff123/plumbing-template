@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Your Company Name] | Plumbing Website Template</title>
+  <title>Tideline Plumbing | Rivermill, OR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <div class="template-banner">This is a customizable template populated with a fictional example company — swap the name, colors, and content for your own company.</div>
 
   <header>
     <h1>Tideline Plumbing</h1>
@@ -22,43 +22,105 @@
     <button id="nav-toggle" aria-label="Toggle navigation menu">☰</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Fast, reliable plumbing — when you need it.</h2>
-      <p class="hero-sub">Family-run and local to Rivermill since 2014. We show up on time, fix it right the first time, and don't disappear after the invoice.</p>
-      <a href="tel:15550147733" class="call-button">Call (555) 014-7733</a>
-    </section>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">📍 Serving Rivermill, OR since 2014</div>
+      <h2>Fast, reliable plumbing — <em>when you need it.</em></h2>
+      <p class="hero-sub">Family-run and local. We show up on time, fix it right the first time, and don't disappear after the invoice.</p>
+      <div class="hero-actions">
+        <a href="tel:15550147733" class="call-button">📞 Call (555) 014-7733</a>
+        <a href="services.html" class="secondary-button">View all services →</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="trust-bar">
-      <div class="trust-item"><strong>Licensed</strong><span>OR License #PL-44821</span></div>
-      <div class="trust-item"><strong>Insured</strong><span>Fully bonded & insured</span></div>
-      <div class="trust-item"><strong>24/7</strong><span>Emergency calls welcome</span></div>
-      <div class="trust-item"><strong>11 yrs</strong><span>Serving Rivermill & nearby</span></div>
-    </section>
-
-    <section class="services-preview">
-      <h3>What we handle</h3>
-      <div class="service-grid">
-        <div class="service-card">
-          <h4>Leak repair</h4>
-          <p>From a dripping faucet to a hidden slab leak — we find it and fix it.</p>
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <span class="trust-icon">✅</span>
+        <div>
+          <strong>Licensed</strong>
+          <span>OR License #PL-44821</span>
         </div>
-        <div class="service-card">
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🛡️</span>
+        <div>
+          <strong>Insured</strong>
+          <span>Fully bonded & insured</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🕐</span>
+        <div>
+          <strong>24/7</strong>
+          <span>Emergency calls welcome</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🏠</span>
+        <div>
+          <strong>11 years</strong>
+          <span>Serving Rivermill & nearby</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="services-preview">
+      <span class="section-label">What we do</span>
+      <h3>Common jobs we handle</h3>
+      <p class="section-sub">From a dripping faucet to a full re-pipe — if it's plumbing, we've handled it.</p>
+
+      <div class="service-grid">
+        <div class="service-card reveal">
+          <div class="service-card-icon">💧</div>
+          <h4>Leak repair</h4>
+          <p>From a dripping faucet to a hidden slab leak — we find it and fix it fast.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon">🪠</div>
           <h4>Drain cleaning</h4>
           <p>Slow or clogged drains cleared fast, without tearing up your yard.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal">
+          <div class="service-card-icon">🔥</div>
           <h4>Water heater install</h4>
           <p>Tank or tankless, we'll help you pick the right fit and install it same week.</p>
         </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon">🚿</div>
+          <h4>Fixture replacement</h4>
+          <p>Toilets, faucets, showerheads — installed clean and up to code.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon">🏗️</div>
+          <h4>Re-pipe</h4>
+          <p>Old galvanized or corroded pipes replaced with modern copper or PEX.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon">🚨</div>
+          <h4>Emergency service</h4>
+          <p>Burst pipe at 2am? We pick up. Same-day emergency calls, no overtime charge.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip reveal">
+      <div class="cta-strip-inner">
+        <h3>Need a plumber today?</h3>
+        <p>We're local, licensed, and available. Call us and we'll get someone out fast.</p>
+        <a href="tel:15550147733" class="call-button">📞 Call (555) 014-7733</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 [Your Company Name] — Template by you</p>
+    <p>&copy; 2026 Tideline Plumbing — Rivermill, OR</p>
   </footer>
 
   <script src="js/nav-toggle.js"></script>
+  <script src="js/scroll-reveal.js"></script>
 </body>
 </html>
