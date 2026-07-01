@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews | Tideline Plumbing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .reviews-hero-stat {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .reviews-hero-num {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      font-weight: 800;
+      color: white;
+      line-height: 1;
+    }
+    .reviews-hero-label {
+      color: #a0b4cc;
+      font-size: 0.95rem;
+    }
+
+    .reviews-wall {
+      padding: 60px 40px 90px;
+      max-width: 1060px;
+      margin: 0 auto;
+      columns: 3;
+      column-gap: 20px;
+    }
+
+    .review-card {
+      break-inside: avoid;
+      background-color: var(--bg-muted);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 28px;
+      margin-bottom: 20px;
+      display: block;
+      transition: border-color 0.25s ease, transform 0.25s ease;
+    }
+
+    .review-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .review-card.featured {
+      background-color: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .review-quote {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+
+    .review-card.featured .review-quote {
+      color: white;
+    }
+
+    .review-quote::before {
+      content: "\201C";
+      font-size: 2rem;
+      color: var(--accent);
+      line-height: 0;
+      vertical-align: -0.5rem;
+      margin-right: 4px;
+    }
+
+    .review-card.featured .review-quote::before {
+      color: #93bbff;
+    }
+
+    .review-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+
+    .review-card.featured .review-meta {
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    .review-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .review-card.featured .review-avatar {
+      background-color: rgba(255,255,255,0.15);
+    }
+
+    .review-name {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .review-card.featured .review-name {
+      color: white;
+    }
+
+    .review-detail {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .review-card.featured .review-detail {
+      color: #7a9ab8;
+    }
+
+    .review-stars {
+      color: #f5a623;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .reviews-wall { columns: 2; padding-left: 24px; padding-right: 24px; }
+    }
+
+    @media (max-width: 560px) {
+      .reviews-wall { columns: 1; }
+      .reviews-hero-num { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tideline Plumbing</h1>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="page-hero-eyebrow">What customers say</p>
+      <h2>Reviews</h2>
+      <p class="page-hero-sub">Real people, real jobs. We let the work speak for itself.</p>
+      <div class="reviews-hero-stat">
+        <span class="reviews-hero-num">4.9</span>
+        <span class="reviews-hero-label">average rating · 80+ reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="reviews-wall">
+
+      <div class="review-card featured reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">Burst pipe under our kitchen sink at 11pm on a Sunday. Marcus answered on the first ring and had someone here within the hour. I've never been so relieved to see a plumber in my life.</p>
+        <div class="review-meta">
+          <div class="review-avatar">DH</div>
+          <div>
+            <p class="review-name">Diane H.</p>
+            <p class="review-detail">Bellingham, WA · Emergency repair</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">Replaced our water heater same week we called. Fair price, no upselling, and they were out the door in two hours.</p>
+        <div class="review-meta">
+          <div class="review-avatar">RT</div>
+          <div>
+            <p class="review-name">Ray T.</p>
+            <p class="review-detail">Ferndale, WA · Water heater install</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">Every other plumber I called gave me a vague estimate over the phone. Tideline gave me a flat price before they started. That's rare and I appreciated it.</p>
+        <div class="review-meta">
+          <div class="review-avatar">SP</div>
+          <div>
+            <p class="review-name">Sandra P.</p>
+            <p class="review-detail">Bellingham, WA · Drain cleaning</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">Used them twice now — once for a slow drain and once for a leaking toilet. Both times they came out quickly, fixed it properly, and didn't leave a mess.</p>
+        <div class="review-meta">
+          <div class="review-avatar">MK</div>
+          <div>
+            <p class="review-name">Mike K.</p>
+            <p class="review-detail">Birch Bay, WA · Multiple jobs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">Marcus re-piped our entire house — old galvanized, nightmare situation. He explained everything upfront, stuck to the quote, and finished a day early.</p>
+        <div class="review-meta">
+          <div class="review-avatar">JL</div>
+          <div>
+            <p class="review-name">Janet L.</p>
+            <p class="review-detail">Lynden, WA · Full re-pipe</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">Extremely professional. Wore shoe covers without being asked, cleaned up after the job, and explained what they'd done before leaving. Small things that matter.</p>
+        <div class="review-meta">
+          <div class="review-avatar">CW</div>
+          <div>
+            <p class="review-name">Carol W.</p>
+            <p class="review-detail">Bellingham, WA · Fixture installation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-quote">Solid work on a slab leak that two other plumbers couldn't find. Took a bit longer than expected but they kept us updated and the fix has held for 8 months now.</p>
+        <div class="review-meta">
+          <div class="review-avatar">BN</div>
+          <div>
+            <p class="review-name">Brian N.</p>
+            <p class="review-detail">Blaine, WA · Slab leak repair</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">We've used Tideline for everything from a simple faucet swap to emergency drain work. They've become our go-to — I recommend them to everyone in the neighborhood.</p>
+        <div class="review-meta">
+          <div class="review-avatar">AL</div>
+          <div>
+            <p class="review-name">Andrea L.</p>
+            <p class="review-detail">Whatcom County, WA · Repeat customer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">Showed up on time, which apparently is a high bar in this industry. Fixed the problem in under an hour. Will use again without hesitation.</p>
+        <div class="review-meta">
+          <div class="review-avatar">TG</div>
+          <div>
+            <p class="review-name">Tom G.</p>
+            <p class="review-detail">Bellingham, WA · Leak repair</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tideline Plumbing — Bellingham, WA</p>
+  </footer>
+
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+</body>
+</html>
